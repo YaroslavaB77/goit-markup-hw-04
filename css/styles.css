@@ -438,6 +438,10 @@ body {
   fill: var(--descriprion-color);
 }
 
+.mail-link svg {
+  margin-right: 10px;
+}
+
 .telephone:hover {
   fill: var(--brand-color);
   stroke: var(--brand-color);
@@ -446,6 +450,10 @@ body {
 
 .telephone {
   fill: var(--descriprion-color);
+}
+
+.telephone svg {
+  margin-right: 10px;
 }
 
 .instagram-our-team:hover circle {
