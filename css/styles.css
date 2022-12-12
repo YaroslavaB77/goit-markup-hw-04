@@ -74,7 +74,11 @@ body {
     url(../images/background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 .service h1 {
   padding-top: 200px;
 }
@@ -213,7 +217,7 @@ body {
 .menu-decoration {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -243,7 +247,11 @@ body {
 }
 
 .contacts-mail {
-  margin-right: 30px;
+  margin-left: 345px;
+}
+
+.contacts-phone {
+  margin-left: 30px;
 }
 
 .service-phrase {
@@ -300,7 +308,6 @@ body {
 
 .our-team {
   display: flex;
-  flex-wrap: nowrap;
   gap: 30px;
   justify-content: space-between;
 }
@@ -386,17 +393,24 @@ body {
 
 .social-media-our-team {
   list-style: none;
+  padding: 0;
   display: flex;
+  justify-content: center;
   gap: 10px;
-  margin-left: 32px;
+}
+
+.social-media-our-team li {
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  box-shadow: none;
 }
 
 .our-clients {
   list-style: none;
   display: flex;
-  justify-content: center;
+  align-items: center;
   gap: 30px;
-  margin-bottom: 94px;
 }
 
 .tertiary-header {
@@ -439,17 +453,28 @@ body {
   stroke: var(--main-background-color);
 }
 
-.circle {
-  fill: transparent;
+.icon-social-border {
+  border: 1px solid transparent;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+}
+
+.icon-social-border:hover,
+.icon-social-border:focus {
+  border: var(--main-background-color) 1px solid;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: var(--brand-color);
+}
+
+.icon-social-border:hover use,
+.icon-social-border:focus use {
+  fill: var(--main-background-color);
 }
 
 .icon-social use {
   fill: var(--icon-color);
-}
-
-.circle:hover,
-.circle:focus {
-  fill: var(--brand-color);
 }
 
 .icon-social:hover use,
@@ -457,37 +482,46 @@ body {
   fill: var(--main-background-color);
 }
 
-.rectangle {
-  fill: var(--icon-color);
-}
-
 .icon-logo use {
   fill: var(--icon-color);
-}
-
-.rectangle:hover rect,
-.rectangle:focus rect {
-  stroke: var(--brand-color);
-  cursor: pointer;
 }
 
 .icon-logo:hover use,
 .icon-logo:focus use {
   fill: var(--brand-color);
+}
+
+.icon-logo-border {
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+}
+
+.icon-logo-border:hover,
+.icon-logo-border:focus {
+  border: 1px solid var(--brand-color);
+  border-radius: 4px;
   cursor: pointer;
 }
 
-.circle-bottom {
-  fill: rgba(255, 255, 255, 0.1);
+.icon-social-bottom-border {
+  border: 1px solid transparent;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+}
+
+.icon-social-bottom-border:hover,
+.icon-social-bottom-border:focus {
+  border: var(--brand-color) 1px solid;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: var(--brand-color);
+  width: 44px;
+  height: 44px;
 }
 
 .icon-social-bottom use {
   fill: var(--main-background-color);
-}
-
-.circle-bottom:hover,
-.circle-bottom:focus {
-  fill: var(--brand-color);
 }
 
 .icon-social-bottom:hover use,
